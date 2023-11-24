@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT DETAILS</title>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        
+
+        <!-- <h1>Product Details</h1> -->
+        <h1></h1>
+        <div class="row">
+            <div class="column column3">
+                <div id="product-image">
+                    <img src="" alt="Product Image">
+                </div>
+            </div>
+            <div class="column column4">
+                <div id="product-name">
+                    <h3 id="product-name-span"></h3>
+                </div>
+                <div id="product-description">
+                    <p>Description: <span id="product-description-span"></span></p>
+                </div>
+                <div id="product-price">
+                    <p>Price: <span id="product-price-span"></span></p>
+                </div>
+                <div id="product-offers">
+                    <p>You have <span id="product-offers-span"></span> Offer</p>
+                </div>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+                <button type="button" class="btn btn-success" onclick="buynow()">Buy Now</button>
+                <div id="delivery-pincode">
+                    <label for="pincode">Enter Delivery Pincode: </label>
+                    <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="Enter 6-digit pincode">
+                    <button onclick="checkPincode()">Check Pincode</button>
+                    <p id="pincode-error" style="color: red; display: none;">Please enter a valid 6-digit pincode.</p>
+                </div>
+                <div>
+                    <div class="column column7">
+                        <div>
+                            <img id="img" src="Images/freeDelivery.png" alt="Product Image" >
+                        </div>
+                    </div>
+                </div> 
+                <div>
+                    <div class="column column7">
+                        <div>
+                            <img id="img" src="Images/returnpolicy.jpg" alt="Product Image" >
+                        </div>
+                    </div>
+                </div> 
+                <!-- <div>
+                    <p>Delivery Pincode: </p>
+                </div> -->
+            </div>     
+               
+        </div><br>
+        <div class="horizontal-line"></div><br>
+
+        <!-- <div class="row column6 ">
+            <div id="product-benefits">
+                <p>Benefits: <span id="product-benefits-span"></span></p>
+            </div>
+            <div id="product-storage">
+                <p>Storage and Uses: <span id="product-storage-span"></span></p>
+            </div>
+        </div> -->
+
+        <div class="panel panel-default" id="product-benefits">
+            <div class="panel-heading">
+                <p><strong>Benefits:</strong> <p id="product-benefits-span"></p></p>
+            </div>
+            <div class="panel-footer" id="product-storage">
+                <p><strong>Storage and Uses:</strong> <p id="product-storage-span"></p></p>
+            </div>
+          </div>
+        
+        
+        <!-- Add more product details here -->
+    </div>
+
+    <script>
+        // Function to retrieve the query parameter by name
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Retrieve the product name from the query parameter
+        const productName = getQueryParameter("product");
+
+        // Display the product details
+        if (productName && productDetails[productName]) {
+            const product = productDetails[productName];
+            document.getElementById("product-name-span").textContent = product.name;
+            document.getElementById("product-description-span").textContent = product.description;
+            document.getElementById("product-price-span").textContent = product.price;
+            document.getElementById("product-image").querySelector("img").src = product.image;
+            document.getElementById("product-benefits-span").textContent = product.benefits;
+            document.getElementById("product-offers-span").textContent = product.offer;
+            document.getElementById("product-storage-span").textContent = product.storageAndUses;
+        }
+    </script>
+</body>
+</html>

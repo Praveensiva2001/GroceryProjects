@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESH MARKET</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <a href="fruits.html">Fruits Page</a> -->
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+        <div id="first-container">
+            <nav class="navbar navbar-default" id="nav">
+               <span >
+                    <span id="fresh">FRESH</span>
+                    <span id="market">Market</span>
+               </span>
+               <form id="search">
+                    <input class="search-box" type="text" id="navsearch" placeholder="search..">
+                    <!-- <button type="button" class="btn btn-default ">
+                        <input class="search-box" type="text" id="navsearch" placeholder="search.."><span class="glyphicon glyphicon-search"></span>  
+                    </button> -->
+                    <i class="glyphicon glyphicon-search" id="navicon"></i>
+                </form>
+               <span>
+                    <button id="cart"> <span class="glyphicon glyphicon-shopping-cart"><i>CART</i></span></button>
+               </span>
+               
+               <span id="language">
+                    <select>
+                        <option>Tamil</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>Japanese</option>
+                        <option>Chinese</option>
+                    </select>
+               </span>
+               <button class="btn btn-default">LOG OUT</button>
+               
+            </nav>
+        </div>
+<!-- Navbar over -->
+
+        <div id="second-container">
+            <a href="#" >Home</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetables.html" >Vegetables</a>
+            <a href="Dairy&Eggs.html" >Dairy & Eggs</a>
+            <a href="Groceries.html" >Groceries</a>
+            <a href="snacks.html" >Snacks</a>
+            <!-- <a href="beverages.html" >Beverages</a> -->
+        </div>
+
+<!-- second container -->
+
+
+        <div  id="third-container ">       
+            <div id="carouse" class="carousel container-fluid">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="images\\carouse\\carousel3.jpeg" alt="Los Angeles" style="width:100%; height: 270px;">
+                  </div>
+            
+                  <div class="item">
+                    <img src="images\\carouse\\carousel2.jpeg" alt="Chicago" style="width:100%; height: 270px;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="images\\carouse\\carousel1.jpeg" alt="New York" style="width:100%; height: 270px;">
+                  </div>
+
+                  <div class="item">
+                    <img src="images\\carouse\\carousel4.jpeg" alt="New York" style="width:100%; height: 270px;">
+                  </div>
+
+                  <div class="item">
+                    <img src="images\\carouse\\carousel5.jpeg" alt="New York" style="width:100%; height: 270px;">
+                  </div>
+              
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#carouse" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left " style="color: yellowgreen;"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carouse" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" style="color: yellowgreen;"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+<!-- third-container -->
+
+
+        <div id="fourth">Latest Products</div>
+        <div id="fourth-container" class="row" >
+            <!-- <div class="column" style=" position: relative;">
+                <img src="latest2.jpeg" style="position: absolute; width: 100%; height: 100%;">             
+            </div> -->
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\latestproducts\\latest2.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>OREO Cookie POP</span><br>
+                    <span >&#8377;100.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\latestproducts\\latest3.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>NESTLE Fitness</span><br>
+                    <span >&#8377;700.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\latestproducts\\latest4.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Blue Diamond Almonds</span><br>
+                    <span ><del>&#8377;750.00</del>    &#8377;600.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\latestproducts\\latest1.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Bud Light SeltZer</span><br>
+                    <span ><del>&#8377;250.00</del>    &#8377;150.00</span>
+                </div> </a>
+            </div>
+        </div>
+<!-- fourth-container -->
+
+
+        <div id="fourth">Featured Products</div>
+        <div id="fifth-container" class="row">
+            <!-- <div class="column" style="background-color:#aaa; "></div>
+            <div class="column" style="background-color:blue;">rwjqkkkkkke</div>
+            <div class="column" style="background-color:orange;">rv45</div>
+            <div class="column" style="background-color:#aaa; "></div>
+            <div class="column" style="background-color:blue;">rwjqkkkkkke</div>
+            <div class="column" style="background-color:orange;">rv45</div>
+            <div class="column" style="background-color:#aaa; "></div>
+            <div class="column" style="background-color:blue;">rwjqkkkkkke</div> -->
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured1.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Lotte Choco Pie, 336g</span><br>
+                    <span >&#8377;145.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured2.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Aashirvaad Superior MP Atta</span><br>
+                    <span ><del>&#8377;250.00</del>    &#8377;150.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured3.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Nutella Chocolate Hazelnut Spread</span><br>
+                    <span >&#8377;445.00</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured4.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Kurkure Chilli Chatka</span><br>
+                    <span >&#8377;50</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured5.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Sunrich Refined Sunflower Oil</span><br>
+                    <span ><del>&#8377;240</del>    &#8377;210</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured6.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Potato Agra 1 Kg</span><br>
+                    <span >&#8377;35</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured7.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Avocado Hass </span><br>
+                    <span ><del>&#8377;110</del>    &#8377;89</span>
+                </div> </a>
+            </div>
+            <div class="column column1" style=" position: relative;">
+                <a href="#"><img src="images\\featuredproducts\\featured8.jpeg" style="position: absolute; width: 100%; height: 80%; top: 0;">
+                <div class="carousel-caption" style="position: absolute; color: black;  text-align: center; bottom: 10px; left: 0; right: 0; height: 20%;">
+                    <span>Everest Turmeric Powder</span><br>
+                    <span ><del>&#8377;55</del>    &#8377;37</span>
+                </div> </a>
+            </div>
+        </div>
+<!-- fifth-container -->
+
+        <div id="sixth-container" class="row">
+            <div class="column column2">
+                <h4>About</h4>
+                <p><a href="#">Contact us</a></p>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+                
+            </div>
+            <div class="column column2">
+                <h4>Help</h4>
+                <p><a href="#">Payments</a></p>
+                <p><a href="#">Shipping</a></p>
+                <p><a href="#">Cancel & Returns</a></p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+            <div class="column column2">
+                <h4>Feedback</h4>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">YouTube</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Facebook</a></p>
+            </div>
+            <div class="column column2">
+                <h4>Address</h4>
+                <p>Door #700, Ground Floor,<br> Rashtra Kavi,<br> Sai Nanasu Plaza,<br> 30th Main Rd,<br> BTM 2nd Stage,<br> Kuvempu Nagar,<br> BTM 2nd Stage,<br> BTM Layout, Bengaluru, Karnataka 560076
+                </p>
+            </div>
+            <div class="column column2" style="position: relative;">
+                <h4>Follow ME</h4>
+                <a href=""></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <div id="banks">
+                    <i class="fa fa-cc-mastercard" style="font-size:30px;"></i>
+                    <i class="fa fa-cc-paypal" style="font-size:30px; "></i>
+                    
+                </div>
+                <div id="banks">
+                    <i class="fa fa-cc-visa" style="font-size:30px"></i>
+                    <i class="fa fa-credit-card" style="font-size:30px"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

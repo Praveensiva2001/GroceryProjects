@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDRESS</title>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url("images\\background image for groceryyy.jpg");
+            background-size: cover; /* Adjusts the image to cover the entire body */
+            background-position:center;
+            display: flex;
+        }
+        .container {
+            width: 45%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Form group styles */
+        .form-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #999;
+            /* background-color: transparent; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Address Details</h2>
+        <form id="addressForm">
+            <div class="form-group">
+                <input type="text" id="addressfullnameid" class="form-control" required placeholder="FullName(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addressphonenumid" class="form-control" required placeholder="Phone Number(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addresspincodeid" class="form-control" required placeholder="Pincode(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addresscityid" class="form-control" required placeholder="City(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addressstateid" class="form-control" required placeholder="State(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addresshousenumid" class="form-control" required placeholder="House No, Building Name(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addressroadnameid" class="form-control" required placeholder="Road Name, Area, colony(Required)*">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            
+        </form>
+        <a href="buynowpage.html"><button type="submit"  class="btn btn-primary">Proceed to Payment</button></a>
+    </div>
+   
+</body>
+</html>
